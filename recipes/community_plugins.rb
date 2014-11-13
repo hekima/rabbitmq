@@ -33,7 +33,6 @@ node['rabbitmq']['community_plugins'].each do |plugin, download_url|
 
   rabbitmq_plugin plugin do
     action :enable
-    notifies :restart, "service[#{node['rabbitmq']['service_name']}]"
   end
 end
 

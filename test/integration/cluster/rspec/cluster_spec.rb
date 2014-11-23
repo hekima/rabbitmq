@@ -6,5 +6,5 @@ end
 
 describe file('/etc/rabbitmq/rabbitmq.config') do
   it { should be_file }
-  its(:content) { should match /^    {cluster_nodes, {.*}},$/ }
+  its(:content) { should match(/^    {cluster_nodes, {.*}},$/) }
 end

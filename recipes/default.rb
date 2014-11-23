@@ -20,8 +20,11 @@
 #
 
 #
-class Chef::Resource
-  include Opscode::RabbitMQ
+class Chef
+  #
+  class Resource
+    include Opscode::RabbitMQ
+  end
 end
 
 include_recipe 'erlang'

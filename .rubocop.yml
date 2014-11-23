@@ -15,3 +15,6 @@ AsciiComments:
 
 MethodLength:
   Max: 18
+
+Metrics/AbcSize:
+  Max: 30
